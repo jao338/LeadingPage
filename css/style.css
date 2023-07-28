@@ -442,3 +442,48 @@ header {
 .section-team-social a:hover{
     background-color: #B28756;
 }
+
+.section-map{
+    background-image: url('../ref/complementos/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.section-map-area{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section-map-info{
+    width: 50%;
+    padding: 30px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.section-map-info-item{
+    display: flex;
+    align-items: center;
+    color: #CCC;
+}
+
+
+.section-map-info-item-img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #CCC;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+
+.section-map-info-item-img img{
+    width: 16px;
+    height: auto;
+}
