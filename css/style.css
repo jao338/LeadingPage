@@ -5,6 +5,10 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     height: 100px;
     background-color: black;
@@ -71,4 +75,149 @@ header{
     background-image: url(../ref/complementos/bg.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+}
+
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.banner .slide-area{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 40pt;
+}
+
+.banner h1 span{
+    color: #B28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.button{
+    display: inline-block;
+    background-color: #B28756;
+    color: white;
+    font-size: 10pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+.banner .sliders-pointers{
+    position: absolute;
+    width:100vw;
+    height: 20px;
+    margin-top: -64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+
+}
+
+.banner .pointer.active{
+    background-color: #B28756;
+}
+
+.default{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-body{
+    margin: auto;
+    max-width: 1140px;
+    min-height: 100px;
+    margin-top: 32px;
+}
+
+.default .section-title{
+    font-size: 28pt;
+}
+
+.default .section-desc{
+    margin-top: 8px;
+    color: #CCC;
+    font-size: 12pt;
+}
+
+.default.light{
+    background-color: #F7F7F7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #333;
+}
+
+.default.dark{
+    background-color: #333;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: white;
+}
+
+.section-about{
+    display: flex;
+}
+
+.section-about-left{
+    flex: 1;
+}
+
+.section-about-right{
+    width: 500px;
+    text-align: center;
+}
+
+
+.section-about-right img{
+    width: 480px;
+}
+
+.section-about-left p{
+    font-size: 14pt;
+    line-height: 28px;
 }
