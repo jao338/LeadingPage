@@ -442,3 +442,65 @@ header {
 .section-team-social a:hover{
     background-color: #B28756;
 }
+
+.section-client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-client-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-client-name, .section-client-review{
+    text-align: center;
+}
+
+.section-client-name{
+    font-size: 24pt;
+    font-weight: 700;
+}
+
+.section-client-desc, .section-client-review{
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.quote p{
+    text-align: center;
+    max-width: 980px;
+}
+
+.quote img{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.sliders-client{
+    display: flex;
+}
+
+.sliders-client .sliders-pointers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliders-client .pointer {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.sliders-client.pointer.active {
+    background-color: #B28756;
+}
+
