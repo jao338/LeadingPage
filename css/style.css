@@ -32,6 +32,10 @@ header {
     background-color: #B28756;
 }
 
+.menu-opener{
+    display: none;
+}
+
 .menu {
     flex: 1;
     display: flex;
@@ -111,6 +115,7 @@ header {
 }
 
 .banner h2 {
+    font-size: 16pt;
     text-transform: uppercase;
     margin-top: 16px;
 }
@@ -216,6 +221,7 @@ header {
 
 .section-about-right img {
     width: 480px;
+    box-shadow: 1px 1px 4px black;
 }
 
 .section-about-left p {
@@ -363,7 +369,6 @@ header {
 }
 
 .section-team .slide {
-    min-height: 300px;
     width: 280px;
     height: 100%;
     display: inline-block;
@@ -486,4 +491,220 @@ header {
 .section-map-info-item-img img{
     width: 16px;
     height: auto;
+}
+
+
+@media (min-width:450px) and (max-width:800px){
+
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        height: 80px;
+        font-weight: 700;
+        font-size: 18pt;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .menu-opener{
+        display: block;
+        width: 44px;
+        margin-right: 30px;
+    }
+
+    .logo{
+        margin-left: 16px;
+    }
+
+    .section-about{
+        flex-direction: column;
+    }
+
+    .section-about-left{
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-about-right{
+        width: auto;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 28px;
+    }
+
+    .section-service:first-child{
+        border-left: 0;
+    }
+
+    .section-team{
+        max-width: 576px;
+    }
+
+    .section-map{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .section-map-area{
+        width: auto;
+    }
+
+    .section-map-info{
+        width: auto;
+    }
+
+    .section-map-info-item{
+        margin-bottom: 20px;
+    }
+
+    .section-map-info-item:last-child{
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        height: 60px;
+        font-weight: 700;
+        font-size: 12pt;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        color: #B28756;
+    }
+
+    .menu-opener{
+        display: block;
+        width: 44px;
+        margin-right: 30px;
+    }
+
+    .logo{
+        margin-left: 16px;
+    }
+
+    .section-about{
+        flex-direction: column;
+    }
+
+    .section-about-left{
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-about-right{
+        width: auto;
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    .section-about-right img{
+       width: 100%; 
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .section-service:first-child{
+        border-left: 0;
+    }
+
+    .section-team{
+        max-width: 280px;
+    }
+
+    .section-projects-photo{
+        width: 320px;
+    }
+
+    .section-projects-photoarea{
+        width: 300px;
+        height: 190px;
+    }
+
+    .section-projects-filters{
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    .section-map{
+        padding-bottom: 250px;
+    }
+
+    .section-map-area{
+        width: auto;
+    }
+
+    .section-map-info{
+        width: auto;
+    }
+
+    .section-map-info-item{
+        margin-bottom: 20px;
+    }
+
+    .section-map-info-item:last-child{
+        margin-bottom: 0;
+    }
+
+    .banner h1{
+        font-size: 24pt;
+    }
+
+    .banner h2{
+        font-size: 12pt;
+    }
+
 }
